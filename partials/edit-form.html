@@ -1,0 +1,16 @@
+﻿<div class="panel-body">
+    <div class="form-group">
+        <label>Title:</label>
+        <input class="form-control" ng-model="currentBook.title" />
+    </div>
+    <div class="form-group">
+        <label>Category:</label>
+        <input class="form-control" ng-model="currentBook.category" />
+    </div>
+    <div class="form-group">
+        <label>Price:</label>
+        <input class="form-control" ng-model="currentBook.price" />
+    </div>
+    <button class="btn btn-primary" ng-click="saveEditForm(currentBook)">Save</button>
+    <button class="btn btn-primary" ng-click="cancelEditForm()">Cancel</button>
+</div>
