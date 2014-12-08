@@ -27,7 +27,7 @@ app.controller('bookMgrCtrl', ['$scope', 'Book', 'popupService', function($scope
   }
 
   $scope.loadEditForm = function (book) {
-    $scope.currentBook = book ? angular.copy(book) : {};
+    $scope.currentBook = book ? Book.get({id: book.id}) : {};
     $scope.displayMode = "edit";
   }
 
